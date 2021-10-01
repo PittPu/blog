@@ -1,0 +1,32 @@
+<html>
+    <head></head>
+    <body>
+        <h1>使用CDN加速访问github</h1>
+        <p>
+            <ol>
+                <li>获取github官方CDN地址</li>
+                <li>修改系统hosts文件</li>
+                <li>刷新系统DNS缓存</li>
+            </ol>
+        </p>
+        <p>
+            <h2>1.获取github官方CDN地址</h2>
+            <p>打开<code>www.ipaddress.com</code>，查询一下三个链接的DNS解析地址：</p>
+            <p>
+                <ol>
+                    <li>github.com</li>
+                    <li>assets-cdn.github.com</li>
+                    <li>github.global.ssl.fastly.net</li>
+                </ol>
+            </p>
+        </P>
+        <p>
+            <h2>2.修改系统hosts文件</h2>
+            <p>打开文件C:\windows\system32\drivers\etc，在末尾添加上三个站点对应的IP</p>
+        </p>
+        <p>
+            <h2>3.刷新系统DNS缓存</h2>
+            <p>在命令提示行窗口运行<code>ipconfig /flushdns</code></p>
+        </p>
+    </body>
+</html>
